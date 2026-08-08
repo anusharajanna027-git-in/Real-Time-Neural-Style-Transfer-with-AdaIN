@@ -22,6 +22,18 @@ AdaIN(x, y) = σ(y) * ((x - μ(x)) / σ(x)) + μ(y)
 - **AdaIN Layer**: Aligns content features to style statistics.
 - **Decoder**: A trained lightweight CNN reconstructs the stylized image from AdaIN features.
 
+### 🔍 The Role of the Pre-trained VGG-19 Network
+
+Instead of training a model from scratch to understand shapes and textures, the algorithm uses a **fixed, pre-trained VGG-19 network** as a feature extractor.
+
+1. **Why Pre-trained & Frozen?**
+   - VGG-19 is pre-trained on ImageNet. Its early layers are experts at detecting simple edges and colors, while deeper layers recognize complex textures, structures, and objects.
+   - We freeze its weights during training (meaning we do not update them). This makes training faster and allows us to focus entirely on training the **Decoder**.
+
+2. **Where is it used?**
+   - **Feature Encoding**: It takes the content and style images and extracts their multi-scale feature maps to feed into the AdaIN layer.
+   - **Loss Computation**: The output of the decoder is passed back through the VGG network to compute **Content Loss ($\mathcal{L}_c$)** (verifying shapes match) and **Style Loss ($\mathcal{L}_s$)** (verifying colors and textures match style statistics).
+
 ---
 
 ## 🗂️ Project Structure
