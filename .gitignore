@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+
+# Large model weights (too big for GitHub)
+vgg_normalised.pth
+*.pth
+
+# Dataset directories (too large for GitHub)
+content_data/
+style_data/
+
+# Experiment outputs (model checkpoints & training images)
+experiment/
+
+# Flask uploads
+static/uploads/
+
+# VSCode
+.vscode/
