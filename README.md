@@ -75,12 +75,12 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 Download `vgg_normalised.pth` and place it in the project root:
 
 ```bash
-# Direct download (recommended)
-curl -o vgg_normalised.pth https://www.hal.t.u-tokyo.ac.jp/~inoue/projects/tmp/vgg_normalised.pth
+# Direct download via Hugging Face (recommended)
+curl -L -o vgg_normalised.pth https://huggingface.co/Bunny6397/AI-NST/resolve/main/vgg_normalised.pth
 ```
 
 Or manually download from:
-- **[vgg_normalised.pth](https://www.hal.t.u-tokyo.ac.jp/~inoue/projects/tmp/vgg_normalised.pth)** (~80MB, hosted by the PyTorch AdaIN author Naoto Inoue)
+- **[vgg_normalised.pth](https://huggingface.co/Bunny6397/AI-NST/resolve/main/vgg_normalised.pth)** (~80MB, hosted securely on Hugging Face Hub)
 
 ---
 
