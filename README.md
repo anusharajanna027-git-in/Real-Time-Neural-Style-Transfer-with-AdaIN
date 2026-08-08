@@ -2,6 +2,8 @@
 
 A real-time neural style transfer web application built with **PyTorch** and **Flask**, implementing the **Adaptive Instance Normalization (AdaIN)** method from the paper [*Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization*](https://arxiv.org/abs/1703.06868) by Huang & Belongie (2017).
 
+**Architecture:** VGG-19 Encoder (Frozen) ➔ Adaptive Instance Normalization (AdaIN) Layer ➔ Trained Decoder Network.
+
 ---
 
 ## 🎨 Demo
