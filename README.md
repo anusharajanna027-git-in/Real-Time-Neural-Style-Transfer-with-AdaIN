@@ -72,8 +72,15 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
 ### 4. Download VGG Weights
 
-Download `vgg_normalised.pth` from the original authors and place it in the project root:
-- [vgg_normalised.pth (Google Drive)](https://drive.google.com/file/d/108uza-dsmwvbW2zv-G73jtVcMU_2Nb7Y/view)
+Download `vgg_normalised.pth` and place it in the project root:
+
+```bash
+# Direct download (recommended)
+curl -o vgg_normalised.pth https://www.hal.t.u-tokyo.ac.jp/~inoue/projects/tmp/vgg_normalised.pth
+```
+
+Or manually download from:
+- **[vgg_normalised.pth](https://www.hal.t.u-tokyo.ac.jp/~inoue/projects/tmp/vgg_normalised.pth)** (~80MB, hosted by the PyTorch AdaIN author Naoto Inoue)
 
 ---
 
